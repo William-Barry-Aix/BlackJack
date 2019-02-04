@@ -22,12 +22,6 @@ class Rank(models.Model):
 class Value(models.Model):
     rank = models.One
 
-
-class Suit(models.Model):
-    libelle = models.CharField(null=None,
-                               default=None)
-
-
 class Card(models.Model):
     rank = models.OneToManyField(Rank,
                             null=None,
